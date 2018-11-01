@@ -1,0 +1,406 @@
+/* 
+ * General
+ */
+
+html, body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  
+  font-weight: 300;
+  
+  letter-spacing: -1.2px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.section-content {
+  color: #3a3a3a;
+  float: left;
+  width: 340px;
+}
+
+.section-device {
+  float: right;
+  position: relative;
+  top: 65px;
+}
+
+.section-device img {
+  width: 600px;
+}
+
+.btn-primary {
+  background: #4285f4;
+  border: 1px solid #1266f1;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.23px;
+  padding: 12px 18px;
+  text-align: center;
+  text-decoration: initial;
+  text-transform: uppercase;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  color: #3372df;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.23px;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+/* 
+ * Header
+ */
+
+header {
+  background-color: #fff;
+  padding: 25px 0;
+}
+
+.title {
+  float: right;
+  font-family: 'Helvetica Neue', time, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.title a, .title a:visited {
+  color: #3a3a3a;
+}
+
+.main-nav {
+  float: right;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.main-nav li a {
+  color: #3a3a3a;
+}
+
+
+/*
+ * Hero section 
+ */
+
+.hero-section .section-content {
+  position: relative;
+  top: 100px;
+}
+
+.hero-section .section-content h2 {
+  font-size: 40px;
+}
+
+.hero-section .section-content .btn-primary {
+  margin-right: 10px;
+}
+
+
+/*
+ * Sign up
+ */ 
+
+.signup-section .section-content h2 {
+  font-size: 30px;
+}
+
+.signup-section .section-content {
+  position: relative;
+  top: 53px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  color: #3a3a3a;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px
+}
+
+.form-group input:focus {
+  outline: 0;
+}
+
+.form-group .error-message {
+  margin: 10px 0;
+  color: #db4437;
+}
+
+.form-group .error-message + input {
+  border-bottom: 2px solid #db4437;
+}
+
+.error-message {
+  color: #db4437;
+}
+
+
+/*
+ * Sign up
+ */ 
+
+.about-section h2 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.about-section p {
+  font-size: 16px;
+}
+
+
+/* 
+ * Home
+ */
+
+.section-tabs {
+  float: left;
+  width: 340px;
+}
+
+.section-tabs .places {
+  margin-top: 62px;
+  padding-right: 20px;
+}
+
+.section-tabs .places a,
+.section-tabs .places a:visited {
+  color: #3372df; 
+}
+
+
+.section-tabs article {
+  margin-bottom: 20px;
+}
+
+.section-tabs article .name {
+  font-size: 18px;
+}
+
+.section-tabs article .walking-distance {
+  color: #6e6e6e;
+  font-size: 13px;
+  margin: 0;
+}
+
+.section-map {
+  float: right;
+  width: 660px;
+}
+
+.section-map .nav {
+  padding: 20px 0;
+}
+
+.section-map .form-group {
+  display: inline;
+}
+
+.section-map #address {
+  font-size: 14px;
+  margin-right: 10px;
+  width: 87%;
+}
+
+.section-map #submit {
+  font-size: 10px;
+  padding: 5px 15px;
+}
+
+#map {
+  height: 500px;
+}
+
+.leaflet-popup-content h3 {
+  margin: 0;
+}
+
+.leaflet-popup-content p {
+  margin: 10px 0 ;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+}
+.post {
+  background-color: #fff;
+  width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  color: #333;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+.img {
+
+
+  float: left;
+  width: 60px;
+  height: 60px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+}
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 10px 0;
+  background-color: #f1f1f1;
+  width: 10%;
+  text-align: center;
+}
+.side-menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 2px 30px;
+  display: block;
+}
+.side-menu a:hover {
+  background-color: #ccc;
+}
+section {
+  float: right;
+  width: 90%;
+}
+section div {
+  width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  position: relative;
+}
+section div img {
+  float: left;
+  width: 60px;
+  height: 60px;
+}
+section div textarea {
+  width: 400px;
+  height: 150px;
+  border: none;
+  padding: 5px 10px;
+  font-family: arial;
+  resize: none;
+  outline: none;
+  border-bottom: 2px solid #0077cc;
+}
+textarea::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 2px;
+}
+section div [type =" submit"] {
+  float: right;
+  margin: 15px 10px auto auto;
+  border: none;
+  background-color: #0077cc;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+}
+.post {
+  background-color: #fff;
+  width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  color: #333;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}

@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+  <main class="hero-section">
+    <div class="container">
+    <a href="{{url_for('logout')}}" class="btn-primary">Signout</a>
+      
+    <h1 class="Timeline">My Timeline</h1>
+
+    </div>
+    <form method="POST" action="/home">
+        {{ form.hidden_tag() }}
+
+        
+        
+	<section>
+      <div class="text">
+        <img class = img src="http://placehold.it/100/100"/>
+        <div class="form-group" id="form_id">
+          
+          {{ form.body.label }}
+          {{ form.body }}
+          <p>
+          	
+          </p>
+         </div>
+        
+        <input id="submit" type="submit" value="post" {{ form.submit(class="btn-primary") }}
+      </div>
+    </section>
+    <div class="overlay"></div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+    <section id="section">
+    <div>
+    	{%for tweet in tweets%}
+    	<p>{{tweet.body}}</p>
+    	{%endfor%}
+    	
+    </div>
+    </section>
+  </body>
+</html>
+	
+        
+
+
+    </div>
+
+  </main>
+{% endblock %}
